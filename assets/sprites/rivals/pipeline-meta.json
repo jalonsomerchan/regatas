@@ -1,0 +1,175 @@
+{
+  "target": "asset",
+  "mode": "idle",
+  "prompt": "Clean HD top-down rival racing sailboats, four color variants, solid magenta background.",
+  "role": "",
+  "input": "assets/raw/rival-boats-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 160,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 192,
+  "fit_scale": 0.9,
+  "trim_border": 10,
+  "edge_clean_depth": 6,
+  "align": "center",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 12,
+  "min_component_area": 100,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "idle-1",
+    "idle-2",
+    "idle-3",
+    "idle-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 52516,
+      "selected_component_bbox": [
+        230,
+        53,
+        380,
+        546
+      ],
+      "crop_bbox": [
+        218,
+        41,
+        392,
+        558
+      ],
+      "edge_touch": false,
+      "output_size": [
+        58,
+        172
+      ],
+      "paste_position": [
+        67,
+        10
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 52455,
+      "selected_component_bbox": [
+        227,
+        53,
+        377,
+        546
+      ],
+      "crop_bbox": [
+        215,
+        41,
+        389,
+        558
+      ],
+      "edge_touch": false,
+      "output_size": [
+        58,
+        172
+      ],
+      "paste_position": [
+        67,
+        10
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 52483,
+      "selected_component_bbox": [
+        230,
+        52,
+        380,
+        544
+      ],
+      "crop_bbox": [
+        218,
+        40,
+        392,
+        556
+      ],
+      "edge_touch": false,
+      "output_size": [
+        58,
+        172
+      ],
+      "paste_position": [
+        67,
+        10
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 52431,
+      "selected_component_bbox": [
+        227,
+        51,
+        377,
+        544
+      ],
+      "crop_bbox": [
+        215,
+        39,
+        389,
+        556
+      ],
+      "edge_touch": false,
+      "output_size": [
+        58,
+        172
+      ],
+      "paste_position": [
+        67,
+        10
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

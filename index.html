@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+    <meta name="description" content="Regata del Viento es un juego móvil de carreras de barcos en 8 bits con río, mar, slalom, IA y circuitos con boyas.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#176c9b">
+    <link rel="canonical" href="http://localhost/boat/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Regata del Viento">
+    <meta property="og:description" content="Carreras de barcos en 8 bits para móvil: río, mar, slalom, IA y resultados compartibles.">
+    <meta property="og:url" content="http://localhost/boat/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Regata del Viento">
+    <meta name="twitter:description" content="Juego móvil de carreras de barcos en estilo 8 bits.">
+    <title>Regata del Viento</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Regata del Viento",
+        "description": "Juego móvil de carreras de barcos en estilo 8 bits con modos de río, mar y slalom.",
+        "applicationCategory": "Game",
+        "operatingSystem": "Web browser",
+        "genre": ["Racing", "Arcade"]
+      }
+    </script>
+  </head>
+  <body>
+    <main class="game-shell">
+      <canvas id="game" aria-label="Juego de carrera de barcos"></canvas>
+
+      <section class="hud" aria-live="polite">
+        <div class="metric">
+          <span data-i18n="ui.time">Tiempo</span>
+          <strong id="time">00:00.0</strong>
+        </div>
+        <div class="metric">
+          <span data-i18n="ui.speed">Velocidad</span>
+          <strong id="speed">0 kt</strong>
+        </div>
+        <div class="metric">
+          <span id="progressLabel">Meta</span>
+          <strong id="distance">0%</strong>
+        </div>
+      </section>
+
+      <section class="mode-panel" id="modePanel">
+        <h1 data-i18n="meta.title">Regata del Viento</h1>
+        <div class="mode-tabs" role="tablist" aria-label="Modo de juego">
+          <button class="mode-button is-active" data-mode="time" type="button">Mejor tiempo</button>
+          <button class="mode-button" data-mode="race" type="button">Contra IA</button>
+        </div>
+        <div class="course-tabs" role="tablist" aria-label="Tipo de circuito">
+          <button class="course-button is-active" data-course="river" type="button">Río</button>
+          <button class="course-button" data-course="sea" type="button">Mar</button>
+          <button class="course-button" data-course="slalom" type="button">Slalom</button>
+        </div>
+        <div class="difficulty" id="difficultyPanel" aria-label="Dificultad IA">
+          <button class="difficulty-button is-active" data-difficulty="easy" type="button">Fácil</button>
+          <button class="difficulty-button" data-difficulty="normal" type="button">Normal</button>
+          <button class="difficulty-button" data-difficulty="hard" type="button">Difícil</button>
+        </div>
+        <div class="menu-actions">
+          <button class="secondary" id="aboutButton" type="button" data-i18n="ui.about">Acerca de</button>
+          <button class="primary" id="startButton" type="button" data-i18n="ui.start">Zarpar</button>
+        </div>
+        <p id="bestTime">Mejor: --:--.-</p>
+      </section>
+
+      <section class="race-result" id="resultPanel" hidden>
+        <h2 id="resultTitle">Meta</h2>
+        <p id="resultText"></p>
+        <div class="menu-actions">
+          <button class="secondary" id="shareButton" type="button" data-i18n="ui.share">Compartir</button>
+          <button class="primary" id="restartButton" type="button" data-i18n="ui.restart">Nueva regata</button>
+        </div>
+      </section>
+
+      <section class="about-panel" id="aboutPanel" hidden>
+        <h2 data-i18n="ui.aboutTitle">Acerca de</h2>
+        <p data-i18n="ui.aboutText">Regata del Viento es una carrera móvil de barcos en 8 bits.</p>
+        <button class="primary" id="closeAboutButton" type="button" data-i18n="ui.close">Cerrar</button>
+      </section>
+
+      <section class="controls" aria-label="Timón">
+        <div class="wheel-wrap" id="wheelZone">
+          <div class="wheel" id="wheel">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="game.js"></script>
+  </body>
+</html>

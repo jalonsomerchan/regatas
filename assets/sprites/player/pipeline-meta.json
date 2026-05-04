@@ -1,0 +1,175 @@
+{
+  "target": "asset",
+  "mode": "idle",
+  "prompt": "Clean HD top-down teal player racing sailboat, 2x2 subtle bobbing animation, solid magenta background.",
+  "role": "",
+  "input": "assets/raw/player-boat-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 140,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 192,
+  "fit_scale": 0.92,
+  "trim_border": 6,
+  "edge_clean_depth": 4,
+  "align": "center",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 12,
+  "min_component_area": 100,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "idle-1",
+    "idle-2",
+    "idle-3",
+    "idle-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 65205,
+      "selected_component_bbox": [
+        230,
+        64,
+        413,
+        577
+      ],
+      "crop_bbox": [
+        218,
+        52,
+        425,
+        589
+      ],
+      "edge_touch": false,
+      "output_size": [
+        67,
+        176
+      ],
+      "paste_position": [
+        62,
+        8
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 65380,
+      "selected_component_bbox": [
+        181,
+        68,
+        365,
+        581
+      ],
+      "crop_bbox": [
+        169,
+        56,
+        377,
+        593
+      ],
+      "edge_touch": false,
+      "output_size": [
+        68,
+        176
+      ],
+      "paste_position": [
+        62,
+        8
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 65279,
+      "selected_component_bbox": [
+        230,
+        21,
+        413,
+        535
+      ],
+      "crop_bbox": [
+        218,
+        9,
+        425,
+        547
+      ],
+      "edge_touch": false,
+      "output_size": [
+        67,
+        176
+      ],
+      "paste_position": [
+        62,
+        8
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 65522,
+      "selected_component_bbox": [
+        180,
+        22,
+        364,
+        535
+      ],
+      "crop_bbox": [
+        168,
+        10,
+        376,
+        547
+      ],
+      "edge_touch": false,
+      "output_size": [
+        68,
+        176
+      ],
+      "paste_position": [
+        62,
+        8
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

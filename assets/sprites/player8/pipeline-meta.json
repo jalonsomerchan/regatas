@@ -1,0 +1,175 @@
+{
+  "target": "asset",
+  "mode": "idle",
+  "prompt": "SNES-era 8-bit pixel art top-down teal player racing sailboat, 2x2 subtle bobbing animation, solid magenta background.",
+  "role": "",
+  "input": "assets/raw/pixel/player-boat-snes-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 140,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 128,
+  "fit_scale": 0.9,
+  "trim_border": 8,
+  "edge_clean_depth": 4,
+  "align": "center",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 8,
+  "min_component_area": 80,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "idle-1",
+    "idle-2",
+    "idle-3",
+    "idle-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 52922,
+      "selected_component_bbox": [
+        220,
+        102,
+        401,
+        519
+      ],
+      "crop_bbox": [
+        212,
+        94,
+        409,
+        527
+      ],
+      "edge_touch": false,
+      "output_size": [
+        52,
+        114
+      ],
+      "paste_position": [
+        38,
+        7
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 55809,
+      "selected_component_bbox": [
+        210,
+        102,
+        417,
+        519
+      ],
+      "crop_bbox": [
+        202,
+        94,
+        425,
+        527
+      ],
+      "edge_touch": false,
+      "output_size": [
+        59,
+        114
+      ],
+      "paste_position": [
+        34,
+        7
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 53364,
+      "selected_component_bbox": [
+        219,
+        88,
+        401,
+        506
+      ],
+      "crop_bbox": [
+        211,
+        80,
+        409,
+        514
+      ],
+      "edge_touch": false,
+      "output_size": [
+        52,
+        115
+      ],
+      "paste_position": [
+        38,
+        6
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 57453,
+      "selected_component_bbox": [
+        165,
+        88,
+        390,
+        506
+      ],
+      "crop_bbox": [
+        157,
+        80,
+        398,
+        514
+      ],
+      "edge_touch": false,
+      "output_size": [
+        63,
+        115
+      ],
+      "paste_position": [
+        32,
+        6
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

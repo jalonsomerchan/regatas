@@ -22,8 +22,5 @@ export const DIFFICULTY = {
 export const COURSES = {
   river: { labelKey: "course.river", length: 7600, laps: 1 },
   sea: { labelKey: "course.sea", length: 3600, laps: 3 },
-  slalom: { labelKey: "course.slalom", length: 6400, laps: 1 },
-  mangrove: { labelKey: "course.mangrove", length: 7200, laps: 1 },
-  canyon: { labelKey: "course.canyon", length: 8200, laps: 1 },
-  storm: { labelKey: "course.storm", length: 4200, laps: 2 }
+  slalom: { labelKey: "course.slalom", length: 6400, laps: 1 }
 };
